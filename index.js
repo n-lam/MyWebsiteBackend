@@ -1,14 +1,14 @@
 // Import modules needed to create an API
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors')
+const cors = require('cors');
 const mongoose = require('mongoose');
 
 // Initialise an express app
 const app = express();
 
 // Set paramaters for the express app
-app.use(cors())
+app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
